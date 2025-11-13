@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rtech</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .header{
+        width: 100%;
+        height: 12vh;
+        background-color: rgb(130, 130, 231);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .section-left img{
+        height: 70px;
+        margin-left: 30px;
+    }
+    .section-right li{
+        color: aliceblue;
+        display: inline;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .section-right input{
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        border-style: none;
+    }
+    .section-right li:hover{
+        color: #F96027;
+    }
+    .dropdown{
+        position: absolute;
+        display: none;
+        background-color: rgb(127, 174, 255);
+    }
+    .dropdown li{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .dropdown ul li{
+        display: block;
+        counter-reset: white;
+        padding: 10px 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .dropdown ul li:hover{
+        color: rgb(105, 72, 207);
+    }
+    .section-right ul li:hover .dropdown{
+        cursor: pointer;
+        display: block;
+    }
+    .header i{
+        color: aliceblue;
+        margin-right: 10px;
+    }
+    .section-1{
+        background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?semt=ais_hybrid&w=740&q=80");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 88vh;
+        height: auto;
+    }
+    .font h1{
+        font-size: 60px;
+        margin-top: 90px;
+        margin-bottom: 20px;
+        font-family: Montserrat;
+        margin-left: 40px;
+
+    }
+    .section-1 p{
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Roboto or Open Sans;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .section-1 .box i{
+        font-size: 90px;
+        margin-bottom: 40px;
+        /* align-items: center; */
+        margin-left: 150px;
+    }
+         @media(max-width:992px){
+        .section-1 .box i{
+            position: relative;
+            align-items: center;
+    
+        }
+    }
+    @media(max-width:992px){
+        .section-1 .box {
+            position: relative;
+            bottom: 50px;
+    
+        }
+    }
+     @media(max-width:992px){
+        .section-1  {
+            position: relative;
+            height: auto;
+    
+        }
+    }
+    .box{
+        background-color:#fff;
+        padding:40px;
+        margin-top: 110px;
+        position: relative;
+    }
+    .box h1{
+        font-family:'Source Serif Pro', serif;
+        font-size:40px;
+        line-height:45px;
+        font-weight:600;
+        text-align: center;
+    }
+    .section-1 .box:hover{
+        background-color: rgb(140, 106, 243);
+        color: aliceblue;
+        box-shadow: 0px 4px 6px 8px gray;
+        transition: 1s;
+    }
+    .section-2{
+        background-image: url(https://media.istockphoto.com/id/821760914/vector/pastel-multi-color-gradient-vector-background-simple-form-and-blend-with-copy-space.jpg?s=612x612&w=0&k=20&c=adwrMs3MkPLXMb69AYSoMpnCfLSAb_D3PCQRGGXiM5g=);
+        min-height: 88vh;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .section-2 h1{
+        padding-top: 30px;
+        text-align: center;
+        text-decoration: underline;
+        font-family: Poppins;
+        font-weight: 600;
+    }
+    .section-2 .card{
+        margin-top: 40px;
+        height: 200px;
+        border-radius: 10px;
+        
+    }
+    .section-2 .card img{
+        height: 120px;
+        width: 120px;
+        /* align-items: center; */
+        margin-left: 30px;
+    }
+    .section-2 .card p{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+    .section-2 .card span{
+        color: red;
+    }
+    .section-2 .card:hover{
+        box-shadow: 0px 2px 4px 6px gray;
+    }
+    .section-2 button{
+        display: block;
+        margin: 40px auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    @media(max-width:552px){
+        .section-2{
+            position: relative;
+            height:auto;
+        }
+         .section-2 button{
+            position: relative;
+            align-items: center;
+            width: 250px;
+        }
+    }
+    .section-3 {
+        padding-top: 50px;
+        text-align: center;
+        position: relative; 
+    }
+    .section-3 .card img{
+        width:100%; 
+        height: 200px;
+        object-fit:cover;
+        
+    }
+    .section-3 button{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+    .section-3 .slide{
+        display: flex;
+        transition:transform 0.5s;
+        gap: 20px;
+    }
+    .section-3 .card{
+        transition: transform 0.3s;
+        min-width: 280px;
+        max-width: 100%;
+        margin-top: 20px;
+        height:350px;
+        flex-shrink:0;
+        transition: transform 0.3s;
+    }
+    .section-3 .card:hover{
+        transform: scale(1.05);
+    }
+    .section-4 img{
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .section-4 .card{
+        width: 200px;
+        transition: transform 0.3s;
+        margin-top: 20px;
+    }
+    .section-4 .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 2px 4px 6px orange;
+    }
+    .section-4 .slider{
+         display: flex;
+         width: max-content; 
+         animation: scroll 30s linear infinite;
+         gap: 20px;
+    }
+    .section-4{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        padding: 20px 0;
+        background-color: #fafbfc;
+        margin-top: 70px;
+        height: 70vh;
+        /* margin-bottom: 70px; */
+    }
+    .section-4 h2{
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        font-family: Poppins;
+        font-weight: 600;
+    }
+    .section-4 p{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 18px;
+
+    }
+     @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* half width tak slide karega */
+  }
+}
+
+.section-5{
+    margin-top: 50px;
+    text-align: center;
+}
+.section-5 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+.section-5 i{
+    font-size: 55px;
+    color: rgb(232, 138, 232);
+    margin-top: 20px;
+}
+.icons i{
+    margin-left: 250px;
+    margin-top: 0px;
+}
+h6{
+    color: rgb(50, 89, 205);
+}
+.section-5 .card{
+    transition:  0.3s ;
+}
+.section-5 .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    background-color: azure;
+}
+.section-6{
+    background-color: #f7f9ff;
+    margin-top: 70px;
+    text-align: center;
+    height: auto;
+}
+.section-6 h2{
+    padding-top: 50px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-align: center;
+}
+.section-6 img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.code span{
+    box-sizing: border-box;
+}
+.section-6 .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    background-color: rgb(213, 221, 252);
+}
+.slides-container {
+  overflow: hidden; 
+  width: 100%;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides .card {
+  min-width: 300px;   
+  margin: 0 10px;
+  flex-shrink: 0;
+  height: auto;
+  border-radius: 20px;
+}
+.slider-controls button{
+    margin-top: 20px;
+    text-align:center; 
+    margin-bottom:15px;
+}
+.section-7 h1{
+    font-family: Poppins;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.section-7 h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Oswald;
+    font-weight: 700;
+    font-style: oblique;
+}
+.section-7 .card{
+    box-shadow: 0px 0px 4px  black;
+    text-align: center;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+}
+.section-7 .card:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp5AMQ8SS2hfwNK2BKr9l4A7Heik846qUCNoRbwjhe1JsSrhVeCBOGNb9BQtTEO_HIitw&usqp=CAU);
+    color: #f7f9ff;
+    transition: 0.5s;
+}
+.section-8{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO6V-KRYPb-xMIfplr_n5pfJDDa7YEWjp4hduDaOkylUSn1_IFn0ww7zXUo_Sk--_rlZc&usqp=CAU);
+    background-size: cover;
+    margin-top: 70px;
+    height: 60vh;
+    color: #f7f9ff;
+}
+.back{
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    margin-top: 80px;
+    padding: 40px;
+    position: relative;
+    border-radius: 20px;
+}
+.section-8 .card{
+    height: auto;
+    background-color: white;
+    /* background: transparent; */
+    color: black;
+    width: 400px;
+    /* margin-left: 200px; */
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.section-8 ul li{
+    display: inline;
+    display: flex;
+}
+.section-8 .card:hover{
+    /* background-color: #d0f2f1; */
+    background-color: rgb(241, 239, 239);
+}
+.section-8 ul li:hover .dropdown{
+    cursor: pointer;
+    display: block;
+} 
+.section-8 button{
+    width: 150px;
+    margin: auto;
+}
+.section-9 {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.section-9 h1 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-9 hr {
+  width: 100px;
+  margin: 0 auto 30px;
+  border: 2px solid purple;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+/* Rating Section */
+.rating h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.rating .stars i {
+  font-size: 22px;
+  color: purple;
+}
+
+/* Progress Bars */
+.review-bar {
+  text-align: left;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* space between bar and text */
+}
+
+.progress-bar-outer {
+  flex: 1; /* takes full width */
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 10px;
+  background-color: purple;
+  border-radius: 10px;
+}
+
+.progress-container span {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #555;
+  min-width: 80px;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rating h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 552px) {
+  .section-9 {
+    margin-top: 40px;
+  }
+
+  .progress-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .progress-container span {
+    margin-top: 5px;
+  }
+}
+.footer a:hover {
+  color: #0dcaf0; /* light blue hover */
+}
+.footer h6, .footer h5 {
+  color: #fff;
+}
+.footer p, .footer li a {
+  font-size: 15px;
+}
+
+
+</style>
+<body>
+    <div class="header">
+        <div class="section-left">
+            <img src="image/rtech-removebg-preview.png" alt="">
+            <!-- <h1>Rtech</h1> -->
+        </div>
+        <div class="section-right d-xl-block d-md-none d-none">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services <i class="fa-solid fa-angle-down"></i> 
+                    <div class="dropdown">
+                         <ul>
+                            <li><i class="fa-solid fa-angle-right"></i>Website Design</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Ecommerce Website</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Web Application</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Mobile App Development</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Graphic Designing</li>
+                            <li><i class="fa-solid fa-angle-right"></i>SEO / SEM</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>Mail Us</li>
+                <input type="text" placeholder="search"class="d-none d-lg-inline">
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars fs-4 d-md-block d-xl-none"></i>
+    </div>
+
+    <div class=" container-fluid section-1">
+        <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-md-6 col-12">
+                <div class="box">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h1>“Launch your IT career from here.”</h1>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-12">
+                <div class="font">
+                <h1><span style="color: purple">Rtech</span><br>Computer Institute</h1></div>
+                <p>R-Tech Computer Institute is the perfect place to learn modern computer skills. With expert trainers, practical classes, and career-focused courses in IT, programming, web, and design, R-Tech prepares students to succeed in today’s digital world.</p>
+            </div>     
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section-2">
+        <h1>Why Choose Rtech institute?</h1>
+        <p style="text-align: center;font-size: 20px;">This institute offers specialized coaching in <span style="color: purple;">coding, video editing, web development,</span> and more</p>
+        <div class="row">
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1198036466/vector/people-family-together-human-unity-chat-bubble-vector-icon.jpg?s=612x612&w=0&k=20&c=TAoPZDTuP3LABAzWv7jVVD-Sv7MxyztMQ2hGR3OyIQI=" alt="">
+                    <p> <span>Communication</span> Skill Development</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/035/866/633/non_2x/project-gear-safety-helmet-logo-template-design-for-brand-or-company-and-other-vector.jpg" alt="">
+                    <p>Project Based <span>Learning</span></p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/53/3b/51/533b517cee64c963ce88444d49dc7d9a.jpg" alt="">
+                    <p><span>Expert Teacher</span> Available </p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-vector/internship-rubber-grunge-stamp-seal-260nw-2435966171.jpg" alt="">
+                    <p><span>Inertnship & placement </span>Guaranty</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="card">
+                    <img src="https://cdn2.vectorstock.com/i/1000x1000/86/91/certificate-rubber-stamp-vector-12438691.jpg" alt="">
+                    <p>Rtech <br><span>Certificate</span></p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-vector/red-flag-on-mountain-top-600nw-744717877.jpg" alt="">
+                    <p>Career <br> <span>Guidance</span></p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-lg btn-danger">Explore Our Programs</button>
+    </div>
+
+    <div class="container section-3 position-relative overflow-hidden">
+        <h3 style="font-family: Poppins; font-weight: 600;">Our Job-Ready Course</h3>
+        <p>Learn in-demand skills and get career-ready with industry-focused training programs.</p>
+        <div class="slide">
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-vector/back-end-development-banner-concept-260nw-422011339.jpg" alt="">
+                    <h4>💻 Back-End Development-</h4>
+                    <h5>PHP, MySQL, Node.js</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+            
+        
+            
+                <div class="card">
+                    <img src="https://www.mindstask.com/en/wp-content/uploads/2020/08/frontendSmallBanner.jpg" alt="">
+                    <h4>🖥 Front-End Development-</h4>
+                    <h5>HTML, CSS, JS, React</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+               
+                
+                <div class="card">
+                    <img src="https://img.freepik.com/free-vector/cartoon-graphic-design-landing-page_52683-70881.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+                    <h4>🎨 Graphic Designing -</h4>
+                    <h5>Photoshop, Illustrator, Canva, UI/UX</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+              
+             
+                
+                <div class="card">
+                    <img src="https://sm.pcmag.com/pcmag_me/gallery/t/the-best-o/the-best-online-video-editors-for-2025_hrjt.jpg" alt="">
+                    <h4>🎬 Video Editing –</h4>
+                    <h5>Premiere Pro, CapCut, DaVinci Resolve</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+                
+            
+             
+               
+                <div class="card">
+                    <img src="https://www.rishabhsoft.com/wp-content/uploads/2018/07/Android-App-Development-Process-1.jpg" alt="">
+                    <h4>📱 App Development – </h4>
+                    <h5>Android Studio & Flutter</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+               
+            
+             
+                
+                <div class="card">
+                    <img src="https://www.monash.edu/__data/assets/image/0006/3997950/illustration-digital-marketing.jpg" alt="">
+                    <h4>🌐 Digital Marketing -</h4>
+                    <h5>SEO, Ads, Social Media, Marketing</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+                
+            
+             
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQExd0s7g9AxpQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1703166341281?e=2147483647&v=beta&t=6FY186NBgvVVlmCtZ5O3pa6DhK-seHvfeKHaYQXwVsg" alt="">
+                    <h4>💡 Programming Languages – </h4>
+                    <h5>C, C++, Java, Python</h5>
+                    <button class="btn btn-danger">Know More</button>
+                    </div>
+                
+        
+        </div>
+    </div>
+
+    <div class="section-4">
+        <h2><b>Companies Hiring</b></h2>
+        <p>"Our talented students are making their mark at <span style="color: purple;">leading companies worldwide."</span></p>
+        <div class="slider">
+            <div class="card">
+            <img src="https://i.pinimg.com/1200x/97/83/22/9783222e98b0d5141519b41e7203ff9a.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/736x/39/a0/ea/39a0eafdc6376069f4646536f2ce3e55.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/1200x/4d/c5/74/4dc5742211ef451e37634edfa2e6101a.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/736x/53/b0/e6/53b0e6c332aa9cb17300f14c2c053a95.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/1200x/f9/39/9c/f9399c3917d9e5b8bef422d67987cff5.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/1200x/d1/8c/c1/d18cc17f198887dfb6b57d7c21335780.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/1200x/86/9b/77/869b77a35a207b05b2401bc157abc9a9.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/736x/5f/d8/51/5fd851833073692ee14d7495d2879088.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/736x/81/29/1b/81291be958924bf66c64a1a16171302d.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/736x/83/cf/05/83cf05e936366d14491ce0b77c887767.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/1200x/32/d8/34/32d834b0e90b307563a94fad285cea10.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://i.pinimg.com/736x/20/6f/5a/206f5afa7b32c73c02f5f8c2912b31aa.jpg" alt="">
+            </div>
+            <div class="card">
+            <img src="https://codingage.in/codinage_icon.png" alt="">
+            </div>
+
+
+            <div class="card"><img src="https://i.pinimg.com/1200x/97/83/22/9783222e98b0d5141519b41e7203ff9a.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/736x/39/a0/ea/39a0eafdc6376069f4646536f2ce3e55.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/1200x/4d/c5/74/4dc5742211ef451e37634edfa2e6101a.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/736x/53/b0/e6/53b0e6c332aa9cb17300f14c2c053a95.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/1200x/f9/39/9c/f9399c3917d9e5b8bef422d67987cff5.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/1200x/d1/8c/c1/d18cc17f198887dfb6b57d7c21335780.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/1200x/86/9b/77/869b77a35a207b05b2401bc157abc9a9.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/736x/5f/d8/51/5fd851833073692ee14d7495d2879088.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/736x/81/29/1b/81291be958924bf66c64a1a16171302d.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/736x/83/cf/05/83cf05e936366d14491ce0b77c887767.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/1200x/32/d8/34/32d834b0e90b307563a94fad285cea10.jpg"></div>
+    <div class="card"><img src="https://i.pinimg.com/736x/20/6f/5a/206f5afa7b32c73c02f5f8c2912b31aa.jpg"></div>
+    <div class="card"><img src="https://codingage.in/codinage_icon.png"></div>
+
+        </div>
+    </div>
+
+    <div class="container section-5">
+        <h2 style="font-family: Poppins;font-weight: 600;"><b>Voices of Our Learners</b></h2>
+        <p>"Authentic experiences and success stories shared by our students."</p>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mt-5">
+                    <i class="fas fa-quote-left"></i>   
+                    <p>"Joining <b>TCS as a Web Developer</b> has been a life-changing experience. The innovative projects and supportive work culture have helped me grow both professionally and personally."</p>
+                    <div class="icons">
+                    <i class="fas fa-quote-right"></i>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW2M-KcXf4PmnQG8GQxFFL94btd7u1zGhy-Q&s" alt="">
+                    <h5>Aman</h5>
+                    <h6>Web Developer</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mt-5">
+                    <i class="fas fa-quote-left"></i>   
+                    <p>My journey as a <b>Graphic Designer at a local startup</b> has been full of learning and creativity. The dynamic environment has helped me grow my skills and confidence.</p>
+                    <div class="icons">
+                    <i class="fas fa-quote-right"></i>
+                    </div>
+                    <img src="https://www.pngitem.com/pimgs/m/96-969998_client-testimonial-shots-face-testimonial-png-transparent-png.png" alt="">
+                    <h5>Ritika</h5>
+                    <h6>Graphic Designer</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card mt-5">
+                    <i class="fas fa-quote-left"></i>   
+                    <p>Working as a <b>Python Developer at Infosys</b> has been a transformative journey. The challenging projects and supportive team have enhanced my skills and boosted my professional growth.</p>
+                    <div class="icons">
+                    <i class="fas fa-quote-right"></i>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1069674124/photo/young-male-college-student.jpg?s=612x612&w=0&k=20&c=bR59-OL6ekusG2w8Dhxr96WieuY8ze0Y0XhVAs-3QWY=" alt="">
+                    <h5>Shivam</h5>
+                    <h6>Python Developer</h6>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="section-6">
+        <div class="container">
+        <h2>Industry Project Exposure</h2>
+        <p style="text-align: center;">Students gain practical experience by working on real-world projects</p>
+        <!-- <div class="row"> -->
+            <div class="slides-container">
+                <div class="slides">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="card mt-5">
+                    <img src="https://i.pinimg.com/736x/db/9c/e9/db9ce9bb2eac9217a720c3e50bd4c611.jpg"alt="">
+                    <h4>Amazon-like 🛒Ecommerce Platform- <br> Backend</h4>
+                    <div class="para">
+                        <p> 💠Secure login and registration system with password encryption.</p>
+                        <p> 💠Admin panel for adding, updating, and managing product listings.</p>
+                        <p> 💠Real-time cart updates with quantity management and pricing.</p>
+                        <p> 💠End-to-end order handling from checkout to confirmation.</p>
+                        <p> 💠MySQL-powered database for storing users, products, and transactions.</p>
+                        </div>
+                        <div class="code flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >HTML</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >CSS</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >PHP</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >MYSQL</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="card mt-5">
+                    <img src="https://i.pinimg.com/1200x/73/97/04/739704de9f9f307063de2e94e45d4f89.jpg" alt="">
+                    <h4>Swiggy-like 🍔Food Ordering App- <br>Backend</h4>
+                    <p>💠Secure login/registration with personalized user profiles.</p>
+                    <p>💠Admin panel to add, update, and manage restaurants and food items.</p>
+                    <p>💠Dynamic cart with item customization, quantity and secure checkout.</p>
+                    <p>💠Real-time order status updates from preparation to delivery.</p>
+                    <p>💠MySQL backend for storing users, restaurants, menus, and orders.</p>
+                    <div class="code flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >HTML</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >CSS</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >PHP</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >MYSQL</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="card mt-5">
+                    <img src="https://i.pinimg.com/1200x/8f/b2/19/8fb219fa9a12b75ae5bf1786185b85d1.jpg"alt="">
+                    <h4>Netflix-like 🎥Video Streaming Platform- <br>Backend</h4>
+                    <p>💠Secure login, signup, and multiple profile management.</p>
+                    <p>💠Admin dashboard to upload, categorize, and manage video content.</p>
+                    <p>💠REST API for delivering video content with adaptive streaming support.</p>
+                    <p>💠Secure payment gateway and subscription plan management.</p>
+                    <p>💠Efficient storage of users, subscriptions, content, and streaming logs.</p>
+                    <div class="code flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >HTML</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >CSS</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >PHP</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >MYSQL</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="card mt-5">
+                    <img src="https://i.pinimg.com/736x/e0/7b/17/e07b170fea15573374b4fe5fae08df51.jpg" alt="">
+                    <h4>FlutterStream-like 📱Mobile App <br> (Flutter)-Backend</h4>
+                    <p>💠Secure login/signup with personalized user accounts.</p>
+                    <p>💠Add, edit, and schedule tasks with deadlines and reminders.</p>
+                    <p>💠Instant task updates across devices using backend APIs.</p>
+                    <p>💠Push notifications for due dates and upcoming tasks.</p>
+                    <p>💠Efficient storage of users, tasks, and daily logs in the backend.</p>
+                    <div class="code flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >HTML</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >CSS</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >PHP</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20" >MYSQL</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        <!-- </div> -->
+         </div>
+
+             <div class="slider-controls">
+                 <button id="prevBtn">⬅</button>
+                 <button id="nextBtn">➡</button>
+            </div>
+    </div>
+    </div>
+
+    <div class="container section-7">
+        <h1>Career Support🎯</h1>
+        <p style="text-align: center; font-size: 18px;">Career Support helps you grow with the <span style="color:purple;"> right guidance, skills, and opportunities</span> for a successful future.</p>
+        <h3>What We Offer</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="card">
+                    <h5>🎯<b>Free Counselling Session</b></h5>
+                    <p>Join our Free Counselling Session to clearly understand your personalized career roadmap</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="card">
+                    <h5>💼<b>Interview Preparation</b></h5>
+                    <p>Get hands-on mock interview practice with dedicated placement support."</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="card">
+                    <h5>🗣<b>Soft Skills Training</b></h5>
+                    <p>Enhance your communication and build lasting confidence for career success.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="card">
+                    <h5>⚡<b>Freelancing & Entrepreneurship Training</b></h5>
+                    <p>An opportunity to build and grow your own career path.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-8">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="back">
+                <h4>Ready to Be Part of Our Next Live Session?</h4>
+                <p>Stay ahead in your career with actionable insights from our live session.</p>
+                <button class="btn btn-danger">Free Demo Class</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-12">
+                <div class="card">
+                    <h2 style="text-align: center; margin-top: 20px;">REGISTER FORM</h2>
+                    <h5 style="text-align: center; color: yellowgreen;">ENTER THE FOLLOWING DETAIL</h5>
+                    <ul>
+                    <li>Name of Applicant</li>
+                    <input type="text" placeholder="Enter your Name">
+                    <li>Mobile No</li>
+                    <input type="text" placeholder="Mobile no">
+                    <li>Email</li>
+                    <input type="email" placeholder="enter your email">
+                    <li>Father's Name</li>
+                    <input type="name" placeholder="Enter father's name">
+                    <li>Course type <i class="fa-solid fa-angle-up"></i>
+                        <div class="dropdown">
+                            <ul>
+                                <li>Web Designing</li>
+                                <li>Graphic Designing</li>
+                                <li>Digital marketing</li>
+                                <li>C,C++</li>
+                                <li>Java,Js</li>
+                                <li>Pythone</li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container section-9">
+  <h1>Reviews</h1>
+  <hr>
+  <div class="row align-items-center justify-content-center">
+    
+    <!-- Rating Section -->
+    <div class="col-lg-3 col-md-4 col-12 text-center mb-4">
+      <div class="rating">
+        <h2>4.5</h2>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+      <span>52k ratings</span>
+    </div>
+
+    <!-- Progress Bars -->
+    <div class="col-lg-6 col-md-8 col-12">
+      <div class="review-bar mb-3">
+        <div class="progress-container">
+          <div class="progress-bar-outer">
+            <div class="progress-bar-inner" style="width: 80%;"></div>
+          </div>
+          <span>35k Reviews</span>
+        </div>
+      </div>
+
+      <div class="review-bar mb-3">
+        <div class="progress-container">
+          <div class="progress-bar-outer">
+            <div class="progress-bar-inner" style="width: 60%;"></div>
+          </div>
+          <span>12k Reviews</span>
+        </div>
+      </div>
+
+      <div class="review-bar mb-3">
+        <div class="progress-container">
+          <div class="progress-bar-outer">
+            <div class="progress-bar-inner" style="width: 65%;"></div>
+          </div>
+          <span>10k Reviews</span>
+        </div>
+      </div>
+
+      <div class="review-bar mb-3">
+        <div class="progress-container">
+          <div class="progress-bar-outer">
+            <div class="progress-bar-inner" style="width: 55%;"></div>
+          </div>
+          <span>7k Reviews</span>
+        </div>
+      </div>
+
+      <div class="review-bar">
+        <div class="progress-container">
+          <div class="progress-bar-outer">
+            <div class="progress-bar-inner" style="width: 60%;"></div>
+          </div>
+          <span>8k Reviews</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">RTech Computer Institute</h5>
+        <p>We provide professional computer courses like Web Designing, Programming, Graphic Designing, and Digital Marketing to build your bright future.</p>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Courses</a></li>
+          <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Contact Us</h6>
+        <p><i class="fa-solid fa-location-dot me-2"></i>Mogal Kuwa Near masjid, Bihar sharif (Nalanda)</p>
+        <p><i class="fa-solid fa-phone me-2"></i>+91 98765 43210</p>
+        <p><i class="fa-solid fa-envelope me-2"></i>info@rtechinstitute.com</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+    </div>
+    <hr class="bg-secondary">
+    <div class="text-center small">
+      © 2025 <strong>RTech Computer Institute</strong>. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    <!-- script -->
+    <script>
+        let index = 0;
+        const slide = document.querySelector(".slide");
+        const cards = document.querySelectorAll(".slide .card");
+        const total = cards.length;
+        const cardwidth = cards[0].offsetWidth + 20;
+        const visibleCards = 3;
+
+        function showSlide(){
+            index++;
+           if (index < 0) index = total - visibleCards;
+         if (index > total - visibleCards) index = 0;
+            slide.style.transform = "translateX(" +(-index * cardwidth) + "px)";
+        }
+        setInterval(showSlide,3000);
+
+        const slides = document.querySelector(".slides");
+        const card = document.querySelectorAll(".slides .card");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        let input= 0; 
+        const cardWidth = card[0].offsetWidth + 20; 
+
+        nextBtn.addEventListener("click", () => {
+          if (input < card.length - 1) {
+         input++;
+         }
+         else{
+            input =0;
+         }
+         slides.style.transform = translateX(-${cardWidth * input}px);
+          
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (input > 0) {
+        input--;
+        }
+        else{
+            input = card.length - 1;
+        }
+        slides.style.transform = translateX(-${cardWidth * input}px);
+        });
+
+// Auto slide function
+function autoSlide() {
+  if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+    // agar end tak pohanch gaye to wapas start se
+    slider.scrollTo({ left: 0, behavior: "smooth" });
+  } else {
+    slider.scrollBy({ left: 250, behavior: "smooth" }); // har step me 250px slide kare
+  }
+}
+
+        
+    </script>
+</body>
+</html>
